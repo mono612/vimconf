@@ -1,0 +1,131 @@
+" 各種プラグインの設定
+" lightlineの設定
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
+
+" NeoSnippetの設定 --------------------------------------------------------------------------
+" Plugin key-mappings.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+smap <C-k>     <Plug>(neosnippet_expand_or_jump)
+xmap <C-k>     <Plug>(neosnippet_expand_target)
+
+" SuperTab like snippets behavior.
+" Note: It must be "imap" and "smap".  It uses <Plug> mappings.
+imap <C-k>     <Plug>(neosnippet_expand_or_jump)
+"imap <expr><TAB>
+" \ pumvisible() ? "\<C-n>" :
+" \ neosnippet#expandable_or_jumpable() ?
+" \    "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+smap <expr><TAB> neosnippet#expandable_or_jumpable() ?
+\ "\<Plug>(neosnippet_expand_or_jump)" : "\<TAB>"
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
+
+" Uniteプラグインの設定 --------------------------------------------------------------------------
+" 入力モードで開始する
+let g:unite_enable_start_insert=1
+" バッファ一覧
+noremap <C-P> :Unite buffer<CR>
+" ファイル一覧
+noremap <C-N> :Unite -buffer-name=file file<CR>
+" 最近使ったファイルの一覧
+noremap <C-Z> :Unite file_mru<CR>
+" sourcesを「今開いているファイルのディレクトリ」とする
+noremap :uff :<C-u>UniteWithBufferDir file -buffer-name=file<CR>
+" ウィンドウを分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
+au FileType unite inoremap <silent> <buffer> <expr> <C-J> unite#do_action('split')
+" ウィンドウを縦に分割して開く
+au FileType unite nnoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
+au FileType unite inoremap <silent> <buffer> <expr> <C-K> unite#do_action('vsplit')
+" ESCキーを2回押すと終了する
+au FileType unite nnoremap <silent> <buffer> <ESC><ESC> :q<CR>
+au FileType unite inoremap <silent> <buffer> <ESC><ESC> <ESC>:q<CR>
+
+"gS to split a one-liner into multiple lines
+"gJ (with the cursor on the first line of a block) to join a block into a single-line statement.
+
+" NeoComplete setting --------------------------------------------------------------------------
+" Disable AutoComplPop.
+let g:acp_enableAtStartup = 0
+" Use neocomplete.
+let g:neocomplete#enable_at_startup = 1
+" Use smartcase.
+let g:neocomplete#enable_smart_case = 1
+let g:neocomplete#enable_underbar_completion = 1
+let g:neocomplete#enable_camel_case_completion = 1
+" ポップアップメニューで表示される候補の数
+let g:neocomplete#max_list = 20
+" シンタックスをキャッシュする時の最小文字数
+let g:neocomplete#sources#syntax#min_keyword_length = 3
+" 補完を表示する最小文字数
+let g:neocomplete#auto_completion_start_length = 2
+"Preview Windowを閉じない
+let g:neocomplete#enable_auto_close_preview = 0
+autocmd insertleave * silent! pclose!
+let g:neocomplete#max_keyword_width = 10000
+" -入力による候補番号の表示
+let g:neocomplete#enable_quick_match = 1
+" 補完候補の一番先頭を選択状態にする(AutoComplPopと似た動作)
+let g:neocomplete#enable_auto_select = 1
+
+let g:neocomplete#sources                   = {
+\    '_':          ['neosnippet', 'file',               'buffer'],
+\    'css':        ['neosnippet',         'dictionary', 'buffer'],
+\    'html':       ['neosnippet', 'file', 'dictionary', 'buffer'],
+\    'javascript': ['neosnippet', 'file', 'dictionary', 'buffer'],
+\    'php':        ['neosnippet', 'file', 'dictionary', 'buffer']
+\}
+
+" Define dictionary.
+let g:neocomplete#sources#dictionary#dictionaries = {
+    \ 'default' : '',
+    \ 'vimshell' : $HOME.'/.vimshell_hist',
+    \ 'scheme' : $HOME.'/.gosh_completions',
+    \ 'javascript' : $HOME.'/dict/javascript.dict',
+    \ 'PHP' : $HOME.'/dict/PHP.dict',
+    \ 'java' : $HOME.'/dict/java.dict'
+        \ }
+
+" 補完の設定
+if !exists('g:neocomplete#force_omni_input_patterns')
+  let g:neocomplete#force_omni_input_patterns = {}
+endif
+let g:neocomplete#force_omni_input_patterns['default'] = '[^.*\t]\.\w*\|\h\w*::'
+
+" Define keyword.
+if !exists('g:neocomplete#keyword_patterns')
+    let g:neocomplete#keyword_patterns = {}
+endif
+let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+
+inoremap <expr><TAB>  pumvisible() ? "\<C-n>" : "\<TAB>"
+inoremap <expr><CR>   pumvisible() ? "\<C-n>" . neocomplete#close_popup()  : "<CR>"
+inoremap <expr><C-e>  pumvisible() ? neocomplete#close_popup() : "<End>"
+inoremap <expr><C-c>  neocomplete#cancel_popup()
+inoremap <expr><C-u>  neocomplete#undo_completion()
+inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
+
+" Enable omni completion.
+autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
+autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
+autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags
+autocmd FileType php setlocal omnifunc=phpcomplete#CompletePHP
+autocmd FileType c setlocal omnifunc=ccomplete#Complete
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+
+" NERDTree Setting
+map <C-t> :NERDTreeToggle<CR>
+let g:NERDTreeDirArrowExpandable = '▸'
+let g:NERDTreeDirArrowCollapsible = '▾'
+
+" ctags key mapping
+set tags+=$HOME.'/user/*.tags'
+nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
+

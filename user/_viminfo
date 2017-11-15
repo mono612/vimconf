@@ -1,0 +1,420 @@
+# この viminfo ファイルは Vim 8.0 によって生成されました.
+# 変更する際には十分注意してください!
+
+# Viminfo version
+|1,4
+
+# このファイルが書かれた時の 'encoding' の値
+*encoding=utf-8
+
+
+# hlsearch on (H) or off (h):
+~h
+# コマンドライン 項目の履歴 (新しいものから古いものへ):
+:q
+|2,0,1510662872,,"q"
+:echo tags
+|2,0,1510662844,,"echo tags"
+:tags
+|2,0,1510662823,,"tags"
+:wq
+|2,0,1510662770,,"wq"
+:VimShell
+|2,0,1510659742,,"VimShell"
+:w
+|2,0,1510659587,,"w"
+:Ctags
+|2,0,1510658133,,"Ctags"
+:echo $HOME
+|2,0,1510658033,,"echo $HOME"
+:help :git
+|2,0,1510656380,,"help :git"
+:Gstatus
+|2,0,1510656350,,"Gstatus"
+:TagsGenerate!
+|2,0,1510642734,,"TagsGenerate!"
+:TagsGenerate
+|2,0,1510642675,,"TagsGenerate"
+:NERDTree
+|2,0,1510456139,,"NERDTree"
+
+# 検索文字列 項目の履歴 (新しいものから古いものへ):
+
+# 式 項目の履歴 (新しいものから古いものへ):
+
+# 入力行 項目の履歴 (新しいものから古いものへ):
+
+# デバッグ行 項目の履歴 (新しいものから古いものへ):
+
+# レジスタ:
+"0	LINE	0
+	let g:neocomplete#keyword_patterns['default'] = '\h\w*'
+|3,0,0,1,1,0,1510647833,"let g:neocomplete#keyword_patterns['default'] = '\\h\\w*'"
+""1	LINE	0
+	
+|3,1,1,1,1,0,1510659584,""
+"2	CHAR	0
+	"Auto-Ctags Setting
+	"let g:auto_ctags_directory_list = [$HOME.'/tags']
+	"set tags+=$HOME.'/tags'
+	let g:auto_ctags_tags_args = '--tag-relative --recurse --sort=yes'
+	
+|3,0,2,0,5,0,1510659582,"\"Auto-Ctags Setting","\"let g:auto_ctags_directory_list = [$HOME.'/tags']","\"set tags+=$HOME.'/tags'","let g:auto_ctags_tags_args = '--tag-relative --recurse --sort=yes'",""
+"3	LINE	0
+	call dein#add('soramugi/auto-ctags.vim')
+|3,0,3,1,1,0,1510659565,"call dein#add('soramugi/auto-ctags.vim')"
+"4	LINE	0
+	
+|3,0,4,1,1,0,1510649973,""
+"5	CHAR	0
+	if !exists('g:neocomplete#force_omni_input_patterns')
+	   let g:neocomplete#force_omni_input_patterns = {}
+	endif
+	
+	" Enable heavy omni completion.
+	"if !exists('g:neocomplete#sources#omni#input_patterns')
+	"  let g:neocomplete#sources#omni#input_patterns = {}
+	"endif
+	"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
+	
+|3,0,5,0,10,0,1510649972,"if !exists('g:neocomplete#force_omni_input_patterns')","   let g:neocomplete#force_omni_input_patterns = {}","endif","","\" Enable heavy omni completion.","\"if !exists('g:neocomplete#sources#omni#input_patterns')","\"  let g:neocomplete#sources#omni#input_patterns = {}","\"endif","\"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\\t]\\%(\\.\\|->\\)'",""
+"6	LINE	0
+	let g:neocomplete#keyword_patterns['default'] = '[^.*\t]\.\w*\|\h\w*::'
+|3,0,6,1,1,0,1510647951,"let g:neocomplete#keyword_patterns['default'] = '[^.*\\t]\\.\\w*\\|\\h\\w*::'"
+"7	LINE	0
+	call dein#add('szw/vim-tags')
+|3,0,7,1,1,0,1510643050,"call dein#add('szw/vim-tags')"
+"-	CHAR	0
+	"
+|3,0,36,0,1,0,1510580943,"\""
+
+# ファイルマーク:
+'0  129  29  ~\_vimrc
+|4,48,129,29,1510662770,"~\\_vimrc"
+'1  105  0  ~\_vimrc
+|4,49,105,0,1510662621,"~\\_vimrc"
+'2  105  0  ~\_vimrc
+|4,50,105,0,1510662621,"~\\_vimrc"
+'3  37  0  ~\_vimrc
+|4,51,37,0,1510659670,"~\\_vimrc"
+'4  37  0  ~\_vimrc
+|4,52,37,0,1510659670,"~\\_vimrc"
+'5  37  0  ~\_vimrc
+|4,53,37,0,1510659670,"~\\_vimrc"
+'6  37  0  ~\_vimrc
+|4,54,37,0,1510659670,"~\\_vimrc"
+'7  127  0  ~\_vimrc
+|4,55,127,0,1510659591,"~\\_vimrc"
+'8  127  0  ~\_vimrc
+|4,56,127,0,1510659591,"~\\_vimrc"
+'9  127  0  ~\_vimrc
+|4,57,127,0,1510659591,"~\\_vimrc"
+
+# ジャンプリスト (新しいものが先):
+-'  129  29  ~\_vimrc
+|4,39,129,29,1510662770,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1510662770,"~\\_vimrc"
+-'  105  0  ~\_vimrc
+|4,39,105,0,1510662719,"~\\_vimrc"
+-'  105  0  ~\_vimrc
+|4,39,105,0,1510662719,"~\\_vimrc"
+-'  105  0  ~\_vimrc
+|4,39,105,0,1510662621,"~\\_vimrc"
+-'  105  0  ~\_vimrc
+|4,39,105,0,1510662621,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510662601,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510662601,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510662601,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510662601,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510659670,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510659670,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510659670,"~\\_vimrc"
+-'  37  0  ~\_vimrc
+|4,39,37,0,1510659670,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659646,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659591,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659591,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659591,"~\\_vimrc"
+-'  127  0  ~\_vimrc
+|4,39,127,0,1510659591,"~\\_vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  323  0  C:\app\vim80\vimrc
+|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  29  0  D:\pleiades\workspace\starforce\src\main.c
+|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+
+# ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~\_vimrc
+	*	1510662767	0
+	"	129	29
+	^	129	30
+	.	129	28
+	+	130	16
+	+	131	89
+	+	131	101
+	+	63	30
+	+	98	5
+	+	94	0
+	+	95	14
+	+	99	52
+	+	130	60
+	+	127	0
+	+	128	18
+	+	123	0
+	+	127	0
+	+	127	49
+	+	127	22
+	+	127	66
+	+	127	0
+	+	128	0
+	+	127	0
+	+	129	28
+
+> C:\app\vim80\vimrc
+	*	1510659569	0
+	"	324	0
+	^	323	0
+	.	323	0
+	+	211	24
+	+	212	30
+	+	211	0
+	+	212	0
+	+	211	0
+	+	212	0
+	+	322	29
+	+	7	0
+	+	322	15
+	+	323	0
+
+> D:\pleiades\workspace\starforce\src\main.c
+	*	1510658174	0
+	"	29	0
+
+> C:\app\vim80\NERD_tree_1
+	*	1510657657	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> ~\dein\.cache\vimrc\.dein\doc\fugitive.txt
+	*	1510656395	0
+	"	34	48
+
+> D:\pleiades\workspace\EtcTest\src\common\EtcTest.java
+	*	1510642781	0
+	"	18	0
+
+> D:\pleiades\workspace\EtcTest\src\common\tags
+	*	1510642771	0
+	"	1	0
+
+> ~\.ctags
+	*	1510641336	0
+	"	3	0
+	^	3	0
+	.	2	13
+	+	2	13
+
+> D:\pleiades\workspace\EtcTest\src\common\ThreadTest.java
+	*	1510580905	0
+	"	16	0
+
+> D:\pleiades\xampp\htdocs\test.html
+	*	1510580072	0
+	"	21	0
+
+> C:\app\vim80\gvimrc
+	*	1510556450	0
+	"	75	19
+	^	73	27
+	.	7	0
+	+	73	26
+	+	7	0
+
+> C:\app\vim80-64\NERD_tree_1
+	*	1510555678	0
+	"	4	0
+	.	1	0
+	+	1	0
+
+> C:\app\vim80-64\[unite] - file
+	*	1510555676	0
+	"	1	0
+	^	1	0
+	.	2	0
+	+	2	0
+
+> C:\app\vim80-64\[unite] - default
+	*	1510453663	0
+	"	1	0
+	^	1	0
+	.	2	0
+	+	2	0
