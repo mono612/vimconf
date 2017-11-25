@@ -129,3 +129,6 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 set tags+=$HOME.'/user/*.tags'
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
+" VB.net用のシンタックスハイライト
+au BufNewFile,BufRead *.vb			setf vbnet
+
