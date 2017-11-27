@@ -1,104 +1,92 @@
-This is a mirror of http://www.vim.org/scripts/script.php?script_id=987
+*hier.txt*		For Vim version 7.3	   Last change: 2011 August 27
+				    Copyright (c) 2011 Jan Christoph Ebersbach
 
-Currently five purposes have been defined :
+Hier                                                                      *hier*
 
-Generates a doxygen license comment.  The tag text is configurable.
+DESCRIPTION                    |hier-description|
+USAGE                          |hier-usage|
+CUSTOMIZATION                  |hier-customization|
+INSTALLATION                   |hier-installation|
+RELATED PLUGINS                |hier-related|
+CHANGELOG                      |hier-changelog|
 
-Generates a doxygen author skeleton.  The tag text is configurable.
+==============================================================================
+DESCRIPTION                                                   *hier-description*
 
-Generates a doxygen comment skeleton for a C, C++ or Python function or class,
-including @brief, @param (for each named argument), and @return.  The tag
-text as well as a comment block header and footer are configurable.
-(Consequently, you can have \brief, etc. if you wish, with little effort.)
+Highlight quickfix errors and location list entries in buffer. This plugin
+was designed to support the editqf vim script
+(http://www.vim.org/scripts/script.php?script_id=3557) but it also works
+very well stand alone.
 
-Ignore code fragment placed in a block defined by #ifdef ... #endif (C/C++).  The
-block name must be given to the function.  All of the corresponding blocks
-in all the file will be treated and placed in a new block DOX_SKIP_BLOCK (or
-any other name that you have configured).  Then you have to update
-PREDEFINED value in your doxygen configuration file with correct block name.
-You also have to set ENABLE_PREPROCESSING to YES.
+This script can be downloaded from
+http://www.vim.org/scripts/script.php?script_id=3564. The latest development
+version is available at https://github.com/jceb/vim-hier.
 
-Generate a doxygen group (begining and ending). The tag text is
-configurable.
+==============================================================================
+USAGE                                                               *hier-usage*
 
-Use:
-- Type of comments (C/C++: /// or /** ... */, Python: ## and # ) :
-  In vim, default C++ comments are : /** ... */. But if you prefer to use ///
-  Doxygen comments just add 'let g:DoxygenToolkit_commentType = "C++"'
-  (without quotes) in your .vimrc file
+The following commands are provided:
+	:HierStart		" enable hier highlighting
+	:HierStop		" disable hier highlighting
+	:HierUpdate		" update error highlighting for current buffer
+	:HierClear		" remove highlighting - it will be displayed
+				" again when :HierUpdate is called
 
-- License :
-  In vim, place the cursor on the line that will follow doxygen license
-  comment.  Then, execute the command :DoxLic.  This will generate license
-  comment and leave the cursor on the line just after.
+==============================================================================
+CUSTOMIZATION                                               *hier-customization*
 
-- Author :
-  In vim, place the cursor on the line that will follow doxygen author
-  comment.  Then, execute the command :DoxAuthor.  This will generate the
-  skeleton and leave the cursor just after @author tag if no variable
-  define it, or just after the skeleton.
+The highlight group can be customized by setting the following variables.
+Setting a variable to the string "" will disable highlighting of that
+group. Every type can be highlighted differently (error, warning, info):
+	let g:hier_highlight_group_qf   = 'SpellBad'
+	let g:hier_highlight_group_qfw  = 'SpellLocal'
+	let g:hier_highlight_group_qfi  = 'SpellRare'
 
-- Function / class comment :
-  In vim, place the cursor on the line of the function header (or returned
-  value of the function) or the class.  Then execute the command :Dox.  This
-  will generate the skeleton and leave the cursor after the @brief tag.
+	let g:hier_highlight_group_loc  = 'SpellBad'
+	let g:hier_highlight_group_locw = 'SpellLocal'
+	let g:hier_highlight_group_loci = 'SpellRare'
 
-- Ignore code fragment (C/C++ only) :
-  In vim, if you want to ignore all code fragment placed in a block such as :
-    #ifdef DEBUG
-    ...
-    #endif
-  You only have to execute the command :DoxUndoc(DEBUG) !
-  
-- Group :
-  In vim, execute the command :DoxBlock to insert a doxygen block on the
-  following line.
+Enable/disable highlighting highlighting by default:
+	let g:hier_enabled              = 1
 
-Limitations:
-- Assumes that the function name (and the following opening parenthesis) is
-  at least on the third line after current cursor position.
-- Not able to update a comment block after it's been written.
-- Blocks delimiters (header and footer) are only included for function
-  comment.
-- Assumes that cindent is used.
-- Comments in function parameters (such as void foo(int bar /* ... */, baz))
-  are not yet supported.
+==============================================================================
+INSTALLATION                                                 *hier-installation*
 
+1. Download hier.vba.gz
+2. Open file in vim and run :so % to install plugin
+3. Restart vim
 
-Example:
-Given:
-int
-  foo(char mychar,
-      int myint,
-      double* myarray,
-      int mask = DEFAULT)
-{ //...
-}
+==============================================================================
+RELATED PLUGINS                                                   *hier-related*
 
-Issuing the :Dox command with the cursor on the function declaration would
-generate
+- editqf is a plugin that let's you edit and add entries in quickfix window.
+  The hier plugin is a useful extension to the editqf plugin
+  (http://www.vim.org/scripts/script.php?script_id=3557)
 
-/**
- * @brief
- *
- * @param mychar
- * @param myint
- * @param myarray
- * @param mask
- *
- * @return
- */
+- quickfixsigns is a plugin similar to hier. The main difference is that it
+  highlights the quickfix locations in a separate column. quickfixsigns also
+  support the highlighting of marks which is not in the focus of hier.
+  (http://www.vim.org/scripts/script.php?script_id=2584)
 
+==============================================================================
+CHANGLOG                                                        *hier-changelog*
 
-To customize the output of the script, see the g:DoxygenToolkit_*
-variables in the script's source.  These variables can be set in your
-.vimrc.
+1.3
+- fix problem when disabling the highlighting by setting the
+  hier_highlight_group variables to the empty string ""
 
-For example, my .vimrc contains:
-let g:DoxygenToolkit_briefTag_pre="@Synopsis  "
-let g:DoxygenToolkit_paramTag_pre="@Param "
-let g:DoxygenToolkit_returnTag="@Returns   "
-let g:DoxygenToolkit_blockHeader="--------------------------------------------------------------------------"
-let g:DoxygenToolkit_blockFooter="----------------------------------------------------------------------------"
-let g:DoxygenToolkit_authorName="Mathias Lorente"
-let g:DoxygenToolkit_licenseTag="My own license"   <-- !!! Does not end with "\<enter>"
+1.2
+- add highlighting groups for warning and info entries
+- make clearing of highlighting behave more graceful towards other
+  plugins
+- add function s:Getlist to remove duplicated code
+
+1.1
+- add commands :HierStart and :HierStop
+- add support for highlighting location list entries
+- add support for highlighting pattern entries
+
+1.0
+- inital release
+
+ vim:tw=78:ts=8:ft=help:norl:

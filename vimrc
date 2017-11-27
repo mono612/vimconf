@@ -4,7 +4,7 @@ scriptencoding utf-8
 " An example for a Japanese version vimrc file.
 " 日本語版のデフォルト設定ファイル(vimrc) - Vim 7.4
 "
-" Last Change: 14-Nov-2017.
+" Last Change: 19-Jan-2018.
 " Maintainer:  MURAOKA Taro <koron.kaoriya@gmail.com>
 "
 " 解説:
@@ -320,6 +320,12 @@ call dein#add('osyo-manga/vim-watchdogs.git')
 call dein#add('scrooloose/nerdtree.git')
 call dein#add('Townk/vim-autoclose.git')
 call dein#add('tpope/vim-fugitive.git')
+call dein#add('fatih/vim-go')
+call dein#add('thinca/vim-quickrun')
+call dein#add('Shougo/vimproc.vim', {'build' : 'make'})
+call dein#add('osyo-manga/shabadou.vim')
+call dein#add('jceb/vim-hier')
+call dein#add('dannyob/quickfixstatus')
 
 " 必須
 call dein#end()

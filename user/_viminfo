@@ -11,18 +11,28 @@
 # hlsearch on (H) or off (h):
 ~h
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+|2,0,1516359171,,"wq"
+:w
+|2,0,1516357608,,"w"
 :q
-|2,0,1510662872,,"q"
+|2,0,1516357404,,"q"
+:q!
+|2,0,1516356588,,"q!"
+:GoFmt
+|2,0,1516350170,,"GoFmt"
+:GoPath
+|2,0,1516349635,,"GoPath"
+:help go-install
+|2,0,1516349551,,"help go-install"
+:GoInstallBinaries
+|2,0,1516349265,,"GoInstallBinaries"
 :echo tags
 |2,0,1510662844,,"echo tags"
 :tags
 |2,0,1510662823,,"tags"
-:wq
-|2,0,1510662770,,"wq"
 :VimShell
 |2,0,1510659742,,"VimShell"
-:w
-|2,0,1510659587,,"w"
 :Ctags
 |2,0,1510658133,,"Ctags"
 :echo $HOME
@@ -47,302 +57,372 @@
 # デバッグ行 項目の履歴 (新しいものから古いものへ):
 
 # レジスタ:
-"0	LINE	0
-	let g:neocomplete#keyword_patterns['default'] = '\h\w*'
-|3,0,0,1,1,0,1510647833,"let g:neocomplete#keyword_patterns['default'] = '\\h\\w*'"
+"0	CHAR	0
+	force_omni_input_patterns
+|3,0,0,0,1,0,1516359072,"force_omni_input_patterns"
 ""1	LINE	0
-	
-|3,1,1,1,1,0,1510659584,""
-"2	CHAR	0
-	"Auto-Ctags Setting
-	"let g:auto_ctags_directory_list = [$HOME.'/tags']
-	"set tags+=$HOME.'/tags'
-	let g:auto_ctags_tags_args = '--tag-relative --recurse --sort=yes'
-	
-|3,0,2,0,5,0,1510659582,"\"Auto-Ctags Setting","\"let g:auto_ctags_directory_list = [$HOME.'/tags']","\"set tags+=$HOME.'/tags'","let g:auto_ctags_tags_args = '--tag-relative --recurse --sort=yes'",""
+		fmt.p
+|3,1,1,1,1,0,1516359168,"	fmt.p"
+"2	LINE	0
+	autocmd FileType go set local omnifunc=gocomplete#Complete
+|3,0,2,1,1,0,1516358873,"autocmd FileType go set local omnifunc=gocomplete#Complete"
 "3	LINE	0
-	call dein#add('soramugi/auto-ctags.vim')
-|3,0,3,1,1,0,1510659565,"call dein#add('soramugi/auto-ctags.vim')"
-"4	LINE	0
-	
-|3,0,4,1,1,0,1510649973,""
-"5	CHAR	0
-	if !exists('g:neocomplete#force_omni_input_patterns')
-	   let g:neocomplete#force_omni_input_patterns = {}
+	fmt:
+|3,0,3,1,1,0,1516357598,"fmt:"
+"4	CHAR	0
+	" チェック後にquickfixウィンドウを開かせない
+	if !exists("g:quickrun_config")
+	    let g:quickrun_config = {}
 	endif
+	let g:quickrun_config["watchdogs_checker/_"] = {
+	      \ "outputter/quickfix/open_cmd" : "",
+	      \ }
 	
-	" Enable heavy omni completion.
-	"if !exists('g:neocomplete#sources#omni#input_patterns')
-	"  let g:neocomplete#sources#omni#input_patterns = {}
-	"endif
-	"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\t]\%(\.\|->\)'
 	
-|3,0,5,0,10,0,1510649972,"if !exists('g:neocomplete#force_omni_input_patterns')","   let g:neocomplete#force_omni_input_patterns = {}","endif","","\" Enable heavy omni completion.","\"if !exists('g:neocomplete#sources#omni#input_patterns')","\"  let g:neocomplete#sources#omni#input_patterns = {}","\"endif","\"let g:neocomplete#sources#omni#input_patterns.c = '[^.[:digit:] *\\t]\\%(\\.\\|->\\)'",""
+|3,0,4,0,9,0,1516357548,"\" チェック後にquickfixウィンドウを開かせない","if !exists(\"g:quickrun_config\")","    let g:quickrun_config = {}","endif","let g:quickrun_config[\"watchdogs_checker/_\"] = {","      \\ \"outputter/quickfix/open_cmd\" : \"\",","      \\ }","",""
+"5	LINE	0
+		fmt.
+|3,0,5,1,1,0,1516357407,"	fmt."
 "6	LINE	0
-	let g:neocomplete#keyword_patterns['default'] = '[^.*\t]\.\w*\|\h\w*::'
-|3,0,6,1,1,0,1510647951,"let g:neocomplete#keyword_patterns['default'] = '[^.*\\t]\\.\\w*\\|\\h\\w*::'"
+	" watchdogs.vim の設定を追加
+|3,0,6,1,1,0,1516356649,"\" watchdogs.vim の設定を追加"
 "7	LINE	0
-	call dein#add('szw/vim-tags')
-|3,0,7,1,1,0,1510643050,"call dein#add('szw/vim-tags')"
+	
+|3,0,7,1,1,0,1516356644,""
+"8	LINE	0
+	"unlet s:config
+|3,0,8,1,1,0,1516356644,"\"unlet s:config"
+"9	LINE	0
+	"call extend(g:quickrun_config, s:config)
+|3,0,9,1,1,0,1516356643,"\"call extend(g:quickrun_config, s:config)"
 "-	CHAR	0
-	"
-|3,0,36,0,1,0,1510580943,"\""
+	.
+|3,0,36,0,1,0,1516359079,"."
 
 # ファイルマーク:
-'0  129  29  ~\_vimrc
-|4,48,129,29,1510662770,"~\\_vimrc"
-'1  105  0  ~\_vimrc
-|4,49,105,0,1510662621,"~\\_vimrc"
-'2  105  0  ~\_vimrc
-|4,50,105,0,1510662621,"~\\_vimrc"
-'3  37  0  ~\_vimrc
-|4,51,37,0,1510659670,"~\\_vimrc"
-'4  37  0  ~\_vimrc
-|4,52,37,0,1510659670,"~\\_vimrc"
-'5  37  0  ~\_vimrc
-|4,53,37,0,1510659670,"~\\_vimrc"
-'6  37  0  ~\_vimrc
-|4,54,37,0,1510659670,"~\\_vimrc"
-'7  127  0  ~\_vimrc
-|4,55,127,0,1510659591,"~\\_vimrc"
-'8  127  0  ~\_vimrc
-|4,56,127,0,1510659591,"~\\_vimrc"
-'9  127  0  ~\_vimrc
-|4,57,127,0,1510659591,"~\\_vimrc"
+'0  34  0  ~\_vimrc
+|4,48,34,0,1516360213,"~\\_vimrc"
+'1  7  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,49,7,0,1516359172,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+'2  94  47  ~\_vimrc
+|4,50,94,47,1516359099,"~\\_vimrc"
+'3  94  47  ~\_vimrc
+|4,51,94,47,1516359099,"~\\_vimrc"
+'4  94  37  ~\_vimrc
+|4,52,94,37,1516358900,"~\\_vimrc"
+'5  94  37  ~\_vimrc
+|4,53,94,37,1516358900,"~\\_vimrc"
+'6  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,54,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+'7  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,55,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+'8  136  0  ~\_vimrc
+|4,56,136,0,1516358658,"~\\_vimrc"
+'9  137  0  ~\_vimrc
+|4,57,137,0,1516358658,"~\\_vimrc"
 
 # ジャンプリスト (新しいものが先):
--'  129  29  ~\_vimrc
-|4,39,129,29,1510662770,"~\\_vimrc"
--'  129  29  ~\_vimrc
-|4,39,129,29,1510662770,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662719,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662719,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662621,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662621,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+-'  34  0  ~\_vimrc
+|4,39,34,0,1516360213,"~\\_vimrc"
+-'  94  47  ~\_vimrc
+|4,39,94,47,1516359925,"~\\_vimrc"
+-'  7  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,0,1516359172,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,0,1516359172,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516359109,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516359109,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  94  47  ~\_vimrc
+|4,39,94,47,1516359099,"~\\_vimrc"
+-'  94  47  ~\_vimrc
+|4,39,94,47,1516359099,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516358949,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516358949,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516358949,"~\\_vimrc"
+-'  94  37  ~\_vimrc
+|4,39,94,37,1516358900,"~\\_vimrc"
+-'  94  37  ~\_vimrc
+|4,39,94,37,1516358900,"~\\_vimrc"
+-'  136  0  ~\_vimrc
+|4,39,136,0,1516358849,"~\\_vimrc"
+-'  136  0  ~\_vimrc
+|4,39,136,0,1516358849,"~\\_vimrc"
+-'  136  0  ~\_vimrc
+|4,39,136,0,1516358849,"~\\_vimrc"
+-'  136  0  ~\_vimrc
+|4,39,136,0,1516358849,"~\\_vimrc"
+-'  136  0  ~\_vimrc
+|4,39,136,0,1516358849,"~\\_vimrc"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  6  29  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,6,29,1516358749,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  137  0  ~\_vimrc
+|4,39,137,0,1516358658,"~\\_vimrc"
+-'  117  0  ~\_vimrc
+|4,39,117,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  117  0  ~\_vimrc
+|4,39,117,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  117  0  ~\_vimrc
+|4,39,117,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  117  0  ~\_vimrc
+|4,39,117,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  117  0  ~\_vimrc
+|4,39,117,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358529,"~\\_vimrc"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  7  12  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,7,12,1516358241,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  1  0  D:\dev\GO\src\github.com\user\hello\hello.go
+|4,39,1,0,1516358167,"D:\\dev\\GO\\src\\github.com\\user\\hello\\hello.go"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  118  0  ~\_vimrc
+|4,39,118,0,1516358020,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516357790,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516357790,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516357790,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516357790,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516357790,"~\\_vimrc"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
 > ~\_vimrc
-	*	1510662767	0
-	"	129	29
-	^	129	30
-	.	129	28
-	+	130	16
-	+	131	89
-	+	131	101
-	+	63	30
-	+	98	5
-	+	94	0
-	+	95	14
-	+	99	52
-	+	130	60
-	+	127	0
-	+	128	18
+	*	1516360158	0
+	"	34	0
+	^	94	48
+	.	94	47
+	+	125	16
+	+	126	89
+	+	126	101
+	+	57	30
+	+	92	5
+	+	88	0
+	+	89	14
+	+	93	52
+	+	125	60
+	+	122	0
+	+	123	18
+	+	118	0
+	+	122	0
+	+	122	49
+	+	122	22
+	+	122	66
+	+	122	0
 	+	123	0
+	+	122	0
+	+	124	28
+	+	127	39
+	+	126	0
 	+	127	0
-	+	127	49
-	+	127	22
-	+	127	66
-	+	127	0
-	+	128	0
-	+	127	0
-	+	129	28
+	+	126	0
+	+	130	30
+	+	94	0
+	+	119	7
+	+	131	0
+	+	132	23
+	+	133	45
+	+	133	0
+	+	3	0
+	+	1	0
+	+	164	0
+	+	133	0
+	+	133	39
+	+	133	0
+	+	143	0
+	+	133	31
+	+	133	4
+	+	133	38
+	+	133	5
+	+	133	0
+	+	133	21
+	+	133	0
+	+	149	0
+	+	148	0
+	+	149	2
+	+	133	0
+	+	150	0
+	+	117	58
+	+	117	0
+	+	87	0
+	+	117	0
+	+	94	47
+
+> D:\dev\GO\src\github.com\user\hello\hello.go
+	*	1516359171	0
+	"	7	0
+	.	7	0
+	+	7	0
+	+	7	5
+	+	7	0
+	+	6	30
+	+	7	0
+
+> ~\dein\repos\github.com\osyo-manga\vim-watchdogs\autoload\watchdogs.vim
+	*	1516356884	0
+	"	649	0
+
+> D:\dev\XAMPP\htdocs\index.php
+	*	1516356583	0
+	"	6	0
+	.	10	0
+	+	10	0
+
+> C:\app\vim80\NERD_tree_1
+	*	1516356417	0
+	"	17	0
+	.	1	0
+	+	1	0
+
+> D:\dev\pleiades\workspace\starforce\src\player.c
+	*	1516356410	0
+	"	10	0
+	^	20	14
+	.	20	13
+	+	20	13
 
 > C:\app\vim80\vimrc
-	*	1510659569	0
-	"	324	0
-	^	323	0
-	.	323	0
+	*	1516356020	0
+	"	339	0
+	.	340	0
 	+	211	24
 	+	212	30
 	+	211	0
@@ -352,17 +432,127 @@
 	+	322	29
 	+	7	0
 	+	322	15
-	+	323	0
+	+	323	26
+	+	7	0
+	+	324	36
+	+	325	35
+	+	325	40
+	+	327	30
+	+	328	39
+	+	325	0
+	+	326	12
+	+	327	12
+	+	330	0
+	+	328	12
+	+	340	0
+
+> D:\dev\pleiades\workspace\starforce\src\main.c
+	*	1516355432	0
+	"	21	0
+	^	21	0
+	.	21	0
+	+	20	15
+	+	21	0
+
+> D:\dev\pleiades\workspace\EtcTest\src\common\ThreadTest.java
+	*	1516355379	0
+	"	27	3
+	.	26	0
+	+	26	0
+
+> ~\dein\repos\github.com\Shougo\vimproc.vim\Makefile
+	*	1516351516	0
+	"	1	0
+
+> D:\dev\GO\src\github.com\user\hello\NERD_tree_1
+	*	1516350161	0
+	"	4	1
+	.	1	0
+	+	1	0
+
+> ~\dein\.cache\vimrc\.dein\doc\vim-go.txt
+	*	1516349635	0
+	"	169	0
+
+> \\LS220D56B\share\usr\Application\01.Windows\09.etc\顔文字辞書IME2002\list.txt
+	*	1516347713	0
+	"	1	0
+
+> D:\dev\nginx\conf\nginx.conf
+	*	1516100639	0
+	"	61	0
+
+> \\LS220D56B\share\usr\etc\99.その他\顔文字リスト.txt
+	*	1515412775	0
+	"	89	0
+
+> \\LS220D56B\share\usr\etc\各種設定.txt
+	*	1515412734	0
+	"	54	0
+
+> \\LS220D56B\share\usr\etc\ls-gl_server.txt
+	*	1515412726	0
+	"	18	0
+
+> \\LS220D56B\share\usr\etc\02.インストールID\eVC4_ID.txt
+	*	1515412713	0
+	"	1	0
+
+> \\LS220D56B\share\usr\etc\02.インストールID\wbw_up_for_old.txt
+	*	1515412703	0
+	"	1	0
+
+> \\LS220D56B\share\usr\etc\02.インストールID\Macromedia Studio MX 2004.txt
+	*	1515412694	0
+	"	1	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\MobileTest\MobileTest\Form1.Designer.cs
+	*	1515412588	0
+	"	13	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\MobileTest\MobileTest\Form1.cs
+	*	1515412579	0
+	"	1	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\MobileTest\MobileTest\HelloForm.cs
+	*	1515412570	0
+	"	11	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\MobileTest\MobileTest\Program.cs
+	*	1515412560	0
+	"	8	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\D2Filer\D2Filer\D2Log.cs
+	*	1515412538	0
+	"	16	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\D2Filer\D2Filer\D2ListView.cs
+	*	1515412528	0
+	"	79	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\D2Filer\D2Filer\D2FilerForm.cs
+	*	1515412511	0
+	"	221	0
+
+> \\LS220D56B\share\usr\Program\01.ソース\03.DotNet\D2Filer\D2Filer\Program.cs
+	*	1515412474	0
+	"	17	0
+
+> \\LS220D56B\share\usr\Program\02.ドキュメント\02.DirecX\DirectXの小ネタ.txt
+	*	1515412404	0
+	"	107	0
+
+> C:\app\vim80\gvimrc
+	*	1511593321	0
+	"	179	45
+	^	73	27
+	.	7	0
+	+	73	26
+	+	7	0
 
 > D:\pleiades\workspace\starforce\src\main.c
 	*	1510658174	0
 	"	29	0
-
-> C:\app\vim80\NERD_tree_1
-	*	1510657657	0
-	"	17	0
-	.	1	0
-	+	1	0
 
 > ~\dein\.cache\vimrc\.dein\doc\fugitive.txt
 	*	1510656395	0
@@ -390,14 +580,6 @@
 > D:\pleiades\xampp\htdocs\test.html
 	*	1510580072	0
 	"	21	0
-
-> C:\app\vim80\gvimrc
-	*	1510556450	0
-	"	75	19
-	^	73	27
-	.	7	0
-	+	73	26
-	+	7	0
 
 > C:\app\vim80-64\NERD_tree_1
 	*	1510555678	0

@@ -1,9 +1,3 @@
-" 各種プラグインの設定
-" lightlineの設定
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
 " NeoSnippetの設定 --------------------------------------------------------------------------
 " Plugin key-mappings.
 " Note: It must be "imap" and "smap".  It uses <Plug> mappings.
@@ -90,13 +84,14 @@ let g:neocomplete#sources#dictionary#dictionaries = {
     \ 'javascript' : $HOME.'/dict/javascript.dict',
     \ 'PHP' : $HOME.'/dict/PHP.dict',
     \ 'java' : $HOME.'/dict/java.dict'
-        \ }
+    \ }
 
 " 補完の設定
 if !exists('g:neocomplete#force_omni_input_patterns')
   let g:neocomplete#force_omni_input_patterns = {}
 endif
 let g:neocomplete#force_omni_input_patterns['default'] = '[^.*\t]\.\w*\|\h\w*::'
+let g:neocomplete#force_omni_input_patterns['go'] = '\h\w\.\w*'
 
 " Define keyword.
 if !exists('g:neocomplete#keyword_patterns')
@@ -121,7 +116,7 @@ autocmd FileType c setlocal omnifunc=ccomplete#Complete
 autocmd FileType java setlocal omnifunc=javacomplete#Complete
 
 " NERDTree Setting
-map <C-t> :NERDTreeToggle<CR>
+map <C-f> :NERDTreeToggle<CR>
 let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 
@@ -129,6 +124,41 @@ let g:NERDTreeDirArrowCollapsible = '▾'
 set tags+=$HOME.'/user/*.tags'
 nnoremap <C-h> :vsp<CR> :exe("tjump ".expand('<cword>'))<CR>
 
-" VB.net用のシンタックスハイライト
-au BufNewFile,BufRead *.vb			setf vbnet
+" Vim-Go Setting
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+let g:go_highlight_structs = 1
+
+" Vim watchdogs setting
+" チェック後にquickfixウィンドウを開かせない
+if !exists("g:quickrun_config")
+    let g:quickrun_config = {}
+endif
+let g:quickrun_config["watchdogs_checker/_"] = {
+      \ "outputter/quickfix/open_cmd" : "",
+      \ }
+
+call watchdogs#setup(g:quickrun_config)
+
+" 書き込み後にシンタックスチェックを行う
+let g:watchdogs_check_BufWritePost_enable = 1
+
+" :WatchdogsRun後にlightline.vimを更新
+let g:Qfstatusline#UpdateCmd = function('lightline#update')
+
+" lightline.vimの設定
+let g:lightline = {
+    \ 'mode_map': {'c': 'NORMAL'},
+    \ 'active': {
+    \   'right': [
+    \     [ 'syntaxcheck' ],
+    \   ]
+    \ },
+    \ 'component_expand': {
+    \   'syntaxcheck': 'qfstatusline#Update',
+    \ },
+    \ 'component_type': {
+    \   'syntaxcheck': 'error',
+    \ },
+    \ }
 
