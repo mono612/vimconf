@@ -11,14 +11,14 @@
 # hlsearch on (H) or off (h):
 ~h
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+|2,0,1511593377,,"wq"
 :q
 |2,0,1510662872,,"q"
 :echo tags
 |2,0,1510662844,,"echo tags"
 :tags
 |2,0,1510662823,,"tags"
-:wq
-|2,0,1510662770,,"wq"
 :VimShell
 |2,0,1510659742,,"VimShell"
 :w
@@ -89,234 +89,234 @@
 |3,0,36,0,1,0,1510580943,"\""
 
 # ファイルマーク:
-'0  129  29  ~\_vimrc
-|4,48,129,29,1510662770,"~\\_vimrc"
-'1  105  0  ~\_vimrc
-|4,49,105,0,1510662621,"~\\_vimrc"
-'2  105  0  ~\_vimrc
-|4,50,105,0,1510662621,"~\\_vimrc"
-'3  37  0  ~\_vimrc
-|4,51,37,0,1510659670,"~\\_vimrc"
-'4  37  0  ~\_vimrc
-|4,52,37,0,1510659670,"~\\_vimrc"
-'5  37  0  ~\_vimrc
-|4,53,37,0,1510659670,"~\\_vimrc"
-'6  37  0  ~\_vimrc
-|4,54,37,0,1510659670,"~\\_vimrc"
-'7  127  0  ~\_vimrc
-|4,55,127,0,1510659591,"~\\_vimrc"
-'8  127  0  ~\_vimrc
-|4,56,127,0,1510659591,"~\\_vimrc"
-'9  127  0  ~\_vimrc
-|4,57,127,0,1510659591,"~\\_vimrc"
+'0  132  44  ~\_vimrc
+|4,48,132,44,1511593377,"~\\_vimrc"
+'1  179  45  C:\app\vim80\gvimrc
+|4,49,179,45,1511593322,"C:\\app\\vim80\\gvimrc"
+'2  331  0  C:\app\vim80\vimrc
+|4,50,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+'3  28  0  ~\_vimrc
+|4,51,28,0,1511593276,"~\\_vimrc"
+'4  28  0  ~\_vimrc
+|4,52,28,0,1511593276,"~\\_vimrc"
+'5  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,53,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+'6  129  29  ~\_vimrc
+|4,54,129,29,1510662770,"~\\_vimrc"
+'7  129  29  ~\_vimrc
+|4,55,129,29,1510662770,"~\\_vimrc"
+'8  129  29  ~\_vimrc
+|4,56,129,29,1510662770,"~\\_vimrc"
+'9  129  29  ~\_vimrc
+|4,57,129,29,1510662770,"~\\_vimrc"
 
 # ジャンプリスト (新しいものが先):
+-'  132  44  ~\_vimrc
+|4,39,132,44,1511593377,"~\\_vimrc"
+-'  132  44  ~\_vimrc
+|4,39,132,44,1511593377,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593338,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593338,"~\\_vimrc"
+-'  179  45  C:\app\vim80\gvimrc
+|4,39,179,45,1511593322,"C:\\app\\vim80\\gvimrc"
+-'  179  45  C:\app\vim80\gvimrc
+|4,39,179,45,1511593322,"C:\\app\\vim80\\gvimrc"
+-'  179  45  C:\app\vim80\gvimrc
+|4,39,179,45,1511593322,"C:\\app\\vim80\\gvimrc"
+-'  179  45  C:\app\vim80\gvimrc
+|4,39,179,45,1511593322,"C:\\app\\vim80\\gvimrc"
+-'  75  19  C:\app\vim80\gvimrc
+|4,39,75,19,1511593311,"C:\\app\\vim80\\gvimrc"
+-'  75  19  C:\app\vim80\gvimrc
+|4,39,75,19,1511593311,"C:\\app\\vim80\\gvimrc"
+-'  75  19  C:\app\vim80\gvimrc
+|4,39,75,19,1511593311,"C:\\app\\vim80\\gvimrc"
+-'  75  19  C:\app\vim80\gvimrc
+|4,39,75,19,1511593311,"C:\\app\\vim80\\gvimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  331  0  C:\app\vim80\vimrc
+|4,39,331,0,1511593302,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  324  0  C:\app\vim80\vimrc
+|4,39,324,0,1511593290,"C:\\app\\vim80\\vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
+-'  28  0  ~\_vimrc
+|4,39,28,0,1511593276,"~\\_vimrc"
 -'  129  29  ~\_vimrc
-|4,39,129,29,1510662770,"~\\_vimrc"
+|4,39,129,29,1511593255,"~\\_vimrc"
 -'  129  29  ~\_vimrc
-|4,39,129,29,1510662770,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662719,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662719,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662621,"~\\_vimrc"
--'  105  0  ~\_vimrc
-|4,39,105,0,1510662621,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510662601,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  37  0  ~\_vimrc
-|4,39,37,0,1510659670,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659646,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  127  0  ~\_vimrc
-|4,39,127,0,1510659591,"~\\_vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  324  0  C:\app\vim80\vimrc
-|4,39,324,0,1510659572,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  323  0  C:\app\vim80\vimrc
-|4,39,323,0,1510659546,"C:\\app\\vim80\\vimrc"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
--'  29  0  D:\pleiades\workspace\starforce\src\main.c
-|4,39,29,0,1510658177,"D:\\pleiades\\workspace\\starforce\\src\\main.c"
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  129  29  ~\_vimrc
+|4,39,129,29,1511593255,"~\\_vimrc"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  14  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,14,0,1510795636,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
+-'  1  0  \\LS220D56B\share\usr\etc\ls-gl_server.txt
+|4,39,1,0,1510795565,"\\\\LS220D56B\\share\\usr\\etc\\ls-gl_server.txt"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
 > ~\_vimrc
-	*	1510662767	0
-	"	129	29
-	^	129	30
-	.	129	28
+	*	1511593375	0
+	"	132	44
+	^	132	47
+	.	132	44
 	+	130	16
 	+	131	89
 	+	131	101
@@ -337,10 +337,21 @@
 	+	128	0
 	+	127	0
 	+	129	28
+	+	133	39
+	+	131	0
+	+	132	44
+
+> C:\app\vim80\gvimrc
+	*	1511593321	0
+	"	179	45
+	^	73	27
+	.	7	0
+	+	73	26
+	+	7	0
 
 > C:\app\vim80\vimrc
-	*	1510659569	0
-	"	324	0
+	*	1511593300	0
+	"	331	0
 	^	323	0
 	.	323	0
 	+	211	24
@@ -353,6 +364,10 @@
 	+	7	0
 	+	322	15
 	+	323	0
+
+> \\LS220D56B\share\usr\etc\ls-gl_server.txt
+	*	1510795629	0
+	"	14	0
 
 > D:\pleiades\workspace\starforce\src\main.c
 	*	1510658174	0
@@ -390,14 +405,6 @@
 > D:\pleiades\xampp\htdocs\test.html
 	*	1510580072	0
 	"	21	0
-
-> C:\app\vim80\gvimrc
-	*	1510556450	0
-	"	75	19
-	^	73	27
-	.	7	0
-	+	73	26
-	+	7	0
 
 > C:\app\vim80-64\NERD_tree_1
 	*	1510555678	0
