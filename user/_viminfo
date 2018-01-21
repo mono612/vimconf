@@ -11,6 +11,18 @@
 # hlsearch on (H) or off (h):
 ~h
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
+:wq
+|2,0,1516537861,,"wq"
+:w
+|2,0,1516537657,,"w"
+:q
+|2,0,1516537607,,"q"
+:terminal
+|2,0,1516511703,,"terminal"
+:vs
+|2,0,1516511429,,"vs"
+:sp
+|2,0,1516511306,,"sp"
 
 # 検索文字列 項目の履歴 (新しいものから古いものへ):
 
@@ -21,9 +33,159 @@
 # デバッグ行 項目の履歴 (新しいものから古いものへ):
 
 # レジスタ:
+""1	LINE	0
+	            index  index.html index.htm;
+|3,1,1,1,1,0,1516515927,"            index  index.html index.htm;"
+"2	LINE	0
+	            root   html;
+|3,0,2,1,1,0,1516515927,"            root   html;"
+"3	LINE	0
+	        return 301 https://$host$request_uri;
+|3,0,3,1,1,0,1516515863,"        return 301 https://$host$request_uri;"
 
 # ファイルマーク:
+'0  171  0  ~\_vimrc
+|4,48,171,0,1516537861,"~\\_vimrc"
+'1  148  0  ~\_vimrc
+|4,49,148,0,1516532178,"~\\_vimrc"
+'2  148  0  ~\_vimrc
+|4,50,148,0,1516532178,"~\\_vimrc"
+'3  126  44  C:\Go\src\html\template\template.go
+|4,51,126,44,1516518033,"C:\\Go\\src\\html\\template\\template.go"
+'4  46  33  D:\dev\nginx\conf\nginx.conf
+|4,52,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+'5  9  62  ~\_vimrc
+|4,53,9,62,1516512094,"~\\_vimrc"
+'6  9  62  ~\_vimrc
+|4,54,9,62,1516512094,"~\\_vimrc"
+'7  9  62  ~\_vimrc
+|4,55,9,62,1516512094,"~\\_vimrc"
+'8  9  62  ~\_vimrc
+|4,56,9,62,1516512094,"~\\_vimrc"
 
 # ジャンプリスト (新しいものが先):
+-'  171  0  ~\_vimrc
+|4,39,171,0,1516537861,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516537609,"~\\_vimrc"
+-'  148  0  ~\_vimrc
+|4,39,148,0,1516532178,"~\\_vimrc"
+-'  148  0  ~\_vimrc
+|4,39,148,0,1516532178,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516532103,"~\\_vimrc"
+-'  126  44  C:\Go\src\html\template\template.go
+|4,39,126,44,1516518033,"C:\\Go\\src\\html\\template\\template.go"
+-'  126  44  C:\Go\src\html\template\template.go
+|4,39,126,44,1516518033,"C:\\Go\\src\\html\\template\\template.go"
+-'  126  44  C:\Go\src\html\template\template.go
+|4,39,126,44,1516518033,"C:\\Go\\src\\html\\template\\template.go"
+-'  126  44  C:\Go\src\html\template\template.go
+|4,39,126,44,1516518033,"C:\\Go\\src\\html\\template\\template.go"
+-'  1  0  C:\Go\src\html\template\template.go
+|4,39,1,0,1516517960,"C:\\Go\\src\\html\\template\\template.go"
+-'  1  0  C:\Go\src\html\template\template.go
+|4,39,1,0,1516517960,"C:\\Go\\src\\html\\template\\template.go"
+-'  1  0  C:\Go\src\html\template\template.go
+|4,39,1,0,1516517960,"C:\\Go\\src\\html\\template\\template.go"
+-'  1  0  C:\Go\src\html\template\template.go
+|4,39,1,0,1516517960,"C:\\Go\\src\\html\\template\\template.go"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  46  33  D:\dev\nginx\conf\nginx.conf
+|4,39,46,33,1516517871,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  1  0  D:\dev\nginx\conf\nginx.conf
+|4,39,1,0,1516515636,"D:\\dev\\nginx\\conf\\nginx.conf"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  9  62  ~\_vimrc
+|4,39,9,62,1516512094,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516512079,"~\\_vimrc"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
+
+> ~\_vimrc
+	*	1516537663	0
+	"	171	0
+	^	171	0
+	.	165	21
+	+	170	40
+	+	164	0
+	+	165	21
+
+> C:\app\vim80\option-window
+	*	1516537603	0
+	"	1	0
+	.	949	0
+	+	949	0
+
+> C:\Go\src\html\template\template.go
+	*	1516518009	0
+	"	126	44
+
+> D:\dev\nginx\conf\nginx.conf
+	*	1516517867	0
+	"	46	33
+	^	46	34
+	.	46	33
+	+	39	0
+	+	46	50
+	+	47	0
+	+	46	33
