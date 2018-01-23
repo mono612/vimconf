@@ -15,7 +15,9 @@
 
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
 :wq
-|2,0,1516670894,,"wq"
+|2,0,1516672450,,"wq"
+:q
+|2,0,1516672437,,"q"
 :w
 |2,0,1516605804,,"w"
 :%default_charset
@@ -24,8 +26,6 @@
 |2,0,1516599540,,"q!"
 :W
 |2,0,1516599385,,"W"
-:q
-|2,0,1516538413,,"q"
 :echo $VIM
 |2,0,1516538409,,"echo $VIM"
 :terminal
@@ -36,6 +36,8 @@
 |2,0,1516511306,,"sp"
 
 # 検索文字列 項目の履歴 (新しいものから古いものへ):
+?/htmlcomplete#detectOmniFlavor
+|2,1,1516672235,47,"htmlcomplete#detectOmniFlavor"
 ?/max_execution_time
 |2,1,1516605857,47,"max_execution_time"
 ?/short_open_tag
@@ -82,60 +84,12 @@
 # デバッグ行 項目の履歴 (新しいものから古いものへ):
 
 # レジスタ:
-"1	LINE	0
-	
-	#user  nobody;
-	worker_processes  1;
-	
-	#error_log  logs/error.log;
-	#error_log  logs/error.log  notice;
-	#error_log  logs/error.log  info;
-	
-	#pid        logs/nginx.pid;
-	
-	
-	events {
-	    worker_connections  1024;
-	}
-	
-	
-	http {
-	    include       mime.types;
-	    default_type  application/octet-stream;
-	
-	    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-	    #                  '$status $body_bytes_sent "$http_referer" '
-	    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-	
-	    #access_log  logs/access.log  main;
-	
-	    sendfile        on;
-	    #tcp_nopush     on;
-	
-	    #keepalive_timeout  0;
-	    keepalive_timeout  65;
-	
-	    #gzip  on;
-	
-	    server {
-	        listen       80;
-	        server_name  localhost;
-	        
-	
-	        #charset koi8-r;
-	
-	        #access_log  logs/host.access.log  main;
-	
-	        location / {
-	            include fastcgi_params;
-	            fastcgi_pass 127.0.0.1
-	        }
-	
-	        #error_page  404              /404.html;
-	
-|3,0,1,1,50,0,1516599575,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
-|<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
-|<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
+"0	CHAR	0
+	htmlcomplete#DetectOmniFlavor
+|3,0,0,0,1,0,1516672229,"htmlcomplete#DetectOmniFlavor"
+""1	LINE	0
+	call dein#add('taichouchou2/html5.vim')
+|3,1,1,1,1,0,1516672448,"call dein#add('taichouchou2/html5.vim')"
 "2	LINE	0
 	
 	#user  nobody;
@@ -187,251 +141,333 @@
 	
 	        #error_page  404              /404.html;
 	
-|3,0,2,1,50,0,1516599359,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
+|3,0,2,1,50,0,1516599575,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
 |<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
 |<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
 "3	LINE	0
-	            index  index.html index.htm;
-|3,0,3,1,1,0,1516515927,"            index  index.html index.htm;"
+	
+	#user  nobody;
+	worker_processes  1;
+	
+	#error_log  logs/error.log;
+	#error_log  logs/error.log  notice;
+	#error_log  logs/error.log  info;
+	
+	#pid        logs/nginx.pid;
+	
+	
+	events {
+	    worker_connections  1024;
+	}
+	
+	
+	http {
+	    include       mime.types;
+	    default_type  application/octet-stream;
+	
+	    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+	    #                  '$status $body_bytes_sent "$http_referer" '
+	    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+	
+	    #access_log  logs/access.log  main;
+	
+	    sendfile        on;
+	    #tcp_nopush     on;
+	
+	    #keepalive_timeout  0;
+	    keepalive_timeout  65;
+	
+	    #gzip  on;
+	
+	    server {
+	        listen       80;
+	        server_name  localhost;
+	        
+	
+	        #charset koi8-r;
+	
+	        #access_log  logs/host.access.log  main;
+	
+	        location / {
+	            include fastcgi_params;
+	            fastcgi_pass 127.0.0.1
+	        }
+	
+	        #error_page  404              /404.html;
+	
+|3,0,3,1,50,0,1516599359,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
+|<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
+|<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
 "4	LINE	0
-	            root   html;
-|3,0,4,1,1,0,1516515927,"            root   html;"
+	            index  index.html index.htm;
+|3,0,4,1,1,0,1516515927,"            index  index.html index.htm;"
 "5	LINE	0
+	            root   html;
+|3,0,5,1,1,0,1516515927,"            root   html;"
+"6	LINE	0
 	        return 301 https://$host$request_uri;
-|3,0,5,1,1,0,1516515863,"        return 301 https://$host$request_uri;"
-""-	CHAR	0
+|3,0,6,1,1,0,1516515863,"        return 301 https://$host$request_uri;"
+"-	CHAR	0
 	;
-|3,1,36,0,1,0,1516605497,";"
+|3,0,36,0,1,0,1516605497,";"
 
 # ファイルマーク:
 '0  1  0  D:\dev\nginx\html\index.html
-|4,48,1,0,1516671104,"D:\\dev\\nginx\\html\\index.html"
-'1  332  0  C:\app\vim80\vimrc
-|4,49,332,0,1516670897,"C:\\app\\vim80\\vimrc"
-'2  33  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,50,33,0,1516608747,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
-'3  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,51,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
-'4  48  59  D:\dev\nginx\conf\nginx.conf
-|4,52,48,59,1516599673,"D:\\dev\\nginx\\conf\\nginx.conf"
-'5  1  50  D:\dev\nginx\conf\nginx.conf
-|4,53,1,50,1516599540,"D:\\dev\\nginx\\conf\\nginx.conf"
-'6  48  50  D:\dev\nginx\conf\nginx.conf
-|4,54,48,50,1516599540,"D:\\dev\\nginx\\conf\\nginx.conf"
-'7  1  0  D:\dev\nginx\conf\nginx.conf
-|4,55,1,0,1516599307,"D:\\dev\\nginx\\conf\\nginx.conf"
-'8  1  0  D:\dev\nginx\conf\nginx.conf
-|4,56,1,0,1516599307,"D:\\dev\\nginx\\conf\\nginx.conf"
-'9  1  0  D:\dev\nginx\conf\nginx.conf
-|4,57,1,0,1516599307,"D:\\dev\\nginx\\conf\\nginx.conf"
+|4,48,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
+'1  330  0  C:\app\vim80\vimrc
+|4,49,330,0,1516672482,"C:\\app\\vim80\\vimrc"
+'2  330  0  C:\app\vim80\vimrc
+|4,50,330,0,1516672451,"C:\\app\\vim80\\vimrc"
+'3  179  10  ~\_vimrc
+|4,51,179,10,1516672437,"~\\_vimrc"
+'4  1  0  D:\dev\nginx\html\index.html
+|4,52,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+'5  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,53,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+'6  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,54,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+'7  1  0  D:\dev\nginx\html\index.html
+|4,55,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+'8  1  0  D:\dev\nginx\html\index.html
+|4,56,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+'9  331  37  C:\app\vim80\vimrc
+|4,57,331,37,1516672038,"C:\\app\\vim80\\vimrc"
 
 # ジャンプリスト (新しいものが先):
 -'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516671104,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\pleiades\workspace\LalavelTest\public\js\app.js
-|4,39,1,0,1516671059,"D:\\dev\\pleiades\\workspace\\LalavelTest\\public\\js\\app.js"
--'  6  0  D:\dev\pleiades\workspace\LalavelTest\public\css\app.css
-|4,39,6,0,1516671024,"D:\\dev\\pleiades\\workspace\\LalavelTest\\public\\css\\app.css"
--'  1  0  D:\dev\pleiades\workspace\LalavelTest\public\css\app.css
-|4,39,1,0,1516670986,"D:\\dev\\pleiades\\workspace\\LalavelTest\\public\\css\\app.css"
--'  332  0  C:\app\vim80\vimrc
-|4,39,332,0,1516670897,"C:\\app\\vim80\\vimrc"
--'  332  0  C:\app\vim80\vimrc
-|4,39,332,0,1516670897,"C:\\app\\vim80\\vimrc"
--'  1  0  ~\_vimrc
-|4,39,1,0,1516670740,"~\\_vimrc"
--'  1  0  ~\_vimrc
-|4,39,1,0,1516670740,"~\\_vimrc"
--'  33  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,33,0,1516608747,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  33  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,33,0,1516608747,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  33  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,33,0,1516608747,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  33  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,33,0,1516608747,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  1  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,1,0,1516608604,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  1  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,1,0,1516608604,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  1  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,1,0,1516608604,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  1  0  C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
-|4,39,1,0,1516608604,"C:\\app\\nyagos-4.2.2_1-amd64\\readme_ja.md"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  378  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,378,0,1516605862,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  192  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,192,0,1516605857,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  151  2  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,151,2,1516605829,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  1509  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,1509,0,1516605820,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  822  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,822,0,1516605707,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  818  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,818,0,1516605618,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  666  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,666,0,1516605606,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  581  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,581,0,1516605593,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  495  39  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,495,39,1516605490,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  493  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,493,0,1516605483,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  472  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,472,0,1516605474,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  472  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,472,0,1516605474,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  472  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,472,0,1516605474,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
--'  472  0  D:\dev\php-7.2.1-nts-Win32-VC15-x64\php .ini
-|4,39,472,0,1516605474,"D:\\dev\\php-7.2.1-nts-Win32-VC15-x64\\php .ini"
+|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
+-'  330  0  C:\app\vim80\vimrc
+|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
+-'  330  0  C:\app\vim80\vimrc
+|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
+-'  330  0  C:\app\vim80\vimrc
+|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
+-'  330  0  C:\app\vim80\vimrc
+|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516672437,"~\\_vimrc"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  25  7  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,25,7,1516672263,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  C:\app\vim80\vim80\ftplugin\html.vim
+|4,39,1,0,1516672162,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  D:\dev\nginx\html\index.html
+|4,39,1,0,1516672077,"D:\\dev\\nginx\\html\\index.html"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
 > D:\dev\nginx\html\index.html
-	*	1516671104	0
+	*	1516672537	0
 	"	1	0
+
+> C:\app\vim80\vimrc
+	*	1516672480	0
+	"	330	0
+	^	330	38
+	.	330	0
+	+	329	39
+	+	330	38
+	+	330	4
+	+	330	3
+	+	330	44
+	+	7	0
+	+	330	0
+
+> ~\_vimrc
+	*	1516672434	0
+	"	179	10
+	^	179	11
+	.	176	0
+	+	170	40
+	+	164	0
+	+	165	21
+	+	172	24
+	+	176	0
+
+> C:\app\vim80\vim80\ftplugin\html.vim
+	*	1516672389	0
+	"	25	7
 
 > D:\dev\pleiades\workspace\LalavelTest\public\js\app.js
 	*	1516671059	0
@@ -440,27 +476,6 @@
 > D:\dev\pleiades\workspace\LalavelTest\public\css\app.css
 	*	1516671024	0
 	"	6	0
-
-> C:\app\vim80\vimrc
-	*	1516670891	0
-	"	332	0
-	^	332	0
-	.	7	0
-	+	329	39
-	+	330	38
-	+	331	4
-	+	330	3
-	+	331	44
-	+	7	0
-
-> ~\_vimrc
-	*	1516670739	0
-	"	1	0
-	^	1	0
-	.	165	21
-	+	170	40
-	+	164	0
-	+	165	21
 
 > C:\app\nyagos-4.2.2_1-amd64\readme_ja.md
 	*	1516608744	0

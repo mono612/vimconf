@@ -327,8 +327,7 @@ call dein#add('osyo-manga/shabadou.vim')
 call dein#add('jceb/vim-hier')
 call dein#add('dannyob/quickfixstatus')
 call dein#add('hail2u/vim-css3-syntax')
-call dein#add('taichouchou2/html5.vim')
-call dein#add('taichouchou2/vim-javascript')
+call dein#add('pangloss/vim-javascript')
 
 " 必須
 call dein#end()

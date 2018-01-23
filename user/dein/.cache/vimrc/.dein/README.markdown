@@ -1,100 +1,75 @@
-# html5.vim
+[![Build Status](https://secure.travis-ci.org/AndrewRadev/splitjoin.vim.png?branch=master)](http://travis-ci.org/AndrewRadev/splitjoin.vim)
 
-HTML5 omnicomplete funtion and syntax for Vim.
-Based on the default htmlcomplete.vim.
+## Usage
 
-## Feature
+This plugin is meant to simplify a task I've found too common in my workflow: switching between a single-line statement and a multi-line one. It offers the following default keybindings, which can be customized:
 
-- Support all new elements and attribute.
-- Support [microdata][microdata].
-- Support [RDFa][RDFa].
-- Support [WAI-ARIA][aria].
+* `gS` to split a one-liner into multiple lines
+* `gJ` (with the cursor on the first line of a block) to join a block into a single-line statement.
 
-## Install
+![Demo](http://i.andrewradev.com/df1c7b895602352d7ce3122196c3e6df.gif)
 
-Goto [get][html5.vim] vimball file. Open it with vim and execute :so%
-or 
+I usually work with ruby and a lot of expressions can be written very concisely on a single line. A good example is the "if" statement:
 
-    git clone git://github.com/othree/html5.vim.git
-    cd html5.vim
-    make install
+``` ruby
+puts "foo" if bar?
+```
 
-## Configure
+This is a great feature of the language, but when you need to add more
+statements to the body of the "if", you need to rewrite it:
 
-Disable event-handler attributes support:
+``` ruby
+if bar?
+  puts "foo"
+  puts "baz"
+end
+```
 
-    let g:html5_event_handler_attributes_complete = 0
+The idea of this plugin is to introduce a single key binding (default: `gS`) for transforming a
+line like this:
 
-Disable RDFa attributes support:
+``` html
+<div id="foo">bar</div>
+```
 
-    let g:html5_rdfa_attributes_complete = 0
+Into this:
 
-Disable microdata attributes support:
+``` html
+<div id="foo">
+  bar
+</div>
+```
 
-    let g:html5_microdata_attributes_complete = 0
+And another binding (default: `gJ`) for the opposite transformation.
 
-Disable WAI-ARIA attribute support:
+This currently works for:
+  * Various constructs in Ruby and Eruby
+  * Various constructs in Coffeescript
+  * Various constructs in Perl
+  * Various constructs in Python
+  * PHP arrays
+  * Javascript object literals and functions
+  * Tags in HTML/XML
+  * Handlebars components
+  * CSS, SCSS, LESS style declarations.
+  * YAML arrays and maps
+  * Lua functions and tables
+  * Go structs
+  * Vimscript line continuations
+  * TeX blocks
+  * C if clauses and function calls
+  * Do-blocks in Elixir
 
-    let g:html5_aria_attributes_complete = 0
+For more information, including examples for all of those languages, try `:help
+splitjoin`, or take a look at the help file online at
+[doc/splitjoin.txt](https://github.com/AndrewRadev/splitjoin.vim/blob/master/doc/splitjoin.txt)
 
-## Change Log
+## Contributing
 
-### Version 0.26
+If you'd like to hack on the plugin, please see
+[CONTRIBUTING.md](https://github.com/AndrewRadev/splitjoin.vim/blob/master/CONTRIBUTING.md) first.
 
-- Support multi-value attributes (Most of them are WAI-ARIA attributes)
-- Some old complete function bug fix
+## Issues
 
-### Version 0.25
-
-- WAI-ARIA support bug fix
-- WAI-ARIA complete supports all doctypes now
-
-## License
-
-Copyright (c) 2010 Wei-Ko Kao
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
-
-## References
- 
-1. [HTML5 Spec][1]
-2. [HTML5 Markup][2]
-3. [Custom Data Attributes][3]
-4. [microdata][4]
-5. [RDFa 1.0 Rec][5]
-6. [RDFa 1.1 Core WD][6]
-7. [WAI-ARIA][7]
-8. [IANA Language Sub Tags][8]
-9. [IANA Charset][9]
-
-[html5.vim]:http://www.vim.org/scripts/script.php?script_id=3236
-
-[microdata]:http://dev.w3.org/html5/md/
-[RDFa]:http://www.w3.org/TR/rdfa-syntax/
-[aria]:http://www.w3.org/TR/wai-aria/
-
-[1]:http://dev.w3.org/html5/spec/
-[2]:http://dev.w3.org/html5/markup/
-[3]:http://dev.w3.org/html5/spec/Overview.html#custom-data-attribute
-[4]:http://dev.w3.org/html5/md/
-[5]:http://www.w3.org/TR/rdfa-syntax/#a_xhtmlrdfa_dtd
-[6]:http://www.w3.org/TR/rdfa-core/
-[7]:http://www.w3.org/TR/wai-aria/
-[8]:http://www.iana.org/assignments/language-subtag-registry
-[9]:http://www.iana.org/assignments/character-sets 
+Any issues and suggestions are very welcome on the
+[github bugtracker](https://github.com/AndrewRadev/splitjoin.vim/issues).
