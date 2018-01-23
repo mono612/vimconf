@@ -107,7 +107,7 @@ inoremap <expr><C-u>  neocomplete#undo_completion()
 inoremap <expr><C-h>  neocomplete#smart_close_popup()."\<C-h>"
 
 " Enable omni completion.
-autocmd FileType javascript setlocal omnifunc=javascriptcomplete#CompleteJS
+autocmd FileType javascript setlocal omnifunc=tern#Complete
 autocmd FileType html,markdown setlocal omnifunc=htmlcomplete#CompleteTags
 autocmd FileType css setlocal omnifunc=csscomplete#CompleteCSS
 autocmd FileType xml setlocal omnifunc=xmlcomplete#CompleteTags

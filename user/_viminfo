@@ -15,7 +15,7 @@
 
 # コマンドライン 項目の履歴 (新しいものから古いものへ):
 :wq
-|2,0,1516673473,,"wq"
+|2,0,1516674516,,"wq"
 :w
 |2,0,1516673402,,"w"
 :echo $HOME
@@ -87,65 +87,14 @@
 
 # レジスタ:
 "0	CHAR	0
-	htmlcomplete#DetectOmniFlavor
-|3,0,0,0,1,0,1516672229,"htmlcomplete#DetectOmniFlavor"
+	omnifunc=tern#Complete
+|3,0,0,0,1,0,1516674505,"omnifunc=tern#Complete"
 ""1	LINE	0
-	call dein#add('taichouchou2/html5.vim')
-|3,1,1,1,1,0,1516672448,"call dein#add('taichouchou2/html5.vim')"
+	omnifunc=tern#Complete
+|3,1,1,1,1,0,1516674514,"omnifunc=tern#Complete"
 "2	LINE	0
-	
-	#user  nobody;
-	worker_processes  1;
-	
-	#error_log  logs/error.log;
-	#error_log  logs/error.log  notice;
-	#error_log  logs/error.log  info;
-	
-	#pid        logs/nginx.pid;
-	
-	
-	events {
-	    worker_connections  1024;
-	}
-	
-	
-	http {
-	    include       mime.types;
-	    default_type  application/octet-stream;
-	
-	    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
-	    #                  '$status $body_bytes_sent "$http_referer" '
-	    #                  '"$http_user_agent" "$http_x_forwarded_for"';
-	
-	    #access_log  logs/access.log  main;
-	
-	    sendfile        on;
-	    #tcp_nopush     on;
-	
-	    #keepalive_timeout  0;
-	    keepalive_timeout  65;
-	
-	    #gzip  on;
-	
-	    server {
-	        listen       80;
-	        server_name  localhost;
-	        
-	
-	        #charset koi8-r;
-	
-	        #access_log  logs/host.access.log  main;
-	
-	        location / {
-	            include fastcgi_params;
-	            fastcgi_pass 127.0.0.1
-	        }
-	
-	        #error_page  404              /404.html;
-	
-|3,0,2,1,50,0,1516599575,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
-|<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
-|<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
+	call dein#add('taichouchou2/html5.vim')
+|3,0,2,1,1,0,1516672448,"call dein#add('taichouchou2/html5.vim')"
 "3	LINE	0
 	
 	#user  nobody;
@@ -197,45 +146,143 @@
 	
 	        #error_page  404              /404.html;
 	
-|3,0,3,1,50,0,1516599359,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
+|3,0,3,1,50,0,1516599575,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
 |<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
 |<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
 "4	LINE	0
-	            index  index.html index.htm;
-|3,0,4,1,1,0,1516515927,"            index  index.html index.htm;"
+	
+	#user  nobody;
+	worker_processes  1;
+	
+	#error_log  logs/error.log;
+	#error_log  logs/error.log  notice;
+	#error_log  logs/error.log  info;
+	
+	#pid        logs/nginx.pid;
+	
+	
+	events {
+	    worker_connections  1024;
+	}
+	
+	
+	http {
+	    include       mime.types;
+	    default_type  application/octet-stream;
+	
+	    #log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+	    #                  '$status $body_bytes_sent "$http_referer" '
+	    #                  '"$http_user_agent" "$http_x_forwarded_for"';
+	
+	    #access_log  logs/access.log  main;
+	
+	    sendfile        on;
+	    #tcp_nopush     on;
+	
+	    #keepalive_timeout  0;
+	    keepalive_timeout  65;
+	
+	    #gzip  on;
+	
+	    server {
+	        listen       80;
+	        server_name  localhost;
+	        
+	
+	        #charset koi8-r;
+	
+	        #access_log  logs/host.access.log  main;
+	
+	        location / {
+	            include fastcgi_params;
+	            fastcgi_pass 127.0.0.1
+	        }
+	
+	        #error_page  404              /404.html;
+	
+|3,0,4,1,50,0,1516599359,"","#user  nobody;","worker_processes  1;","","#error_log  logs/error.log;","#error_log  logs/error.log  notice;","#error_log  logs/error.log  info;","","#pid        logs/nginx.pid;","","","events {","    worker_connections  1024;","}","","","http {","    include       mime.types;","    default_type  application/octet-stream;","","    #log_format  main  '$remote_addr - $remote_user [$time_local] \"$request\" '",>70
+|<"    #                  '$status $body_bytes_sent \"$http_referer\" '","    #                  '\"$http_user_agent\" \"$http_x_forwarded_for\"';","","    #access_log  logs/access.log  main;","","    sendfile        on;","    #tcp_nopush     on;","","    #keepalive_timeout  0;","    keepalive_timeout  65;","","    #gzip  on;","","    server {","        listen       80;","        server_name  localhost;","        ","","        #charset koi8-r;","",>50
+|<"        #access_log  logs/host.access.log  main;","","        location / {","            include fastcgi_params;","            fastcgi_pass 127.0.0.1","        }","","        #error_page  404              /404.html;",""
 "5	LINE	0
-	            root   html;
-|3,0,5,1,1,0,1516515927,"            root   html;"
+	            index  index.html index.htm;
+|3,0,5,1,1,0,1516515927,"            index  index.html index.htm;"
 "6	LINE	0
+	            root   html;
+|3,0,6,1,1,0,1516515927,"            root   html;"
+"7	LINE	0
 	        return 301 https://$host$request_uri;
-|3,0,6,1,1,0,1516515863,"        return 301 https://$host$request_uri;"
+|3,0,7,1,1,0,1516515863,"        return 301 https://$host$request_uri;"
 "-	CHAR	0
-	;
-|3,0,36,0,1,0,1516605497,";"
+	"
+|3,0,36,0,1,0,1516674476,"\""
 
 # ファイルマーク:
-'0  7  0  ~\.tern-project
-|4,48,7,0,1516673587,"~\\.tern-project"
-'1  179  10  ~\_vimrc
-|4,49,179,10,1516673473,"~\\_vimrc"
-'2  1  0  D:\dev\nginx\html\index.html
-|4,50,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
-'3  330  0  C:\app\vim80\vimrc
-|4,51,330,0,1516672482,"C:\\app\\vim80\\vimrc"
-'4  330  0  C:\app\vim80\vimrc
-|4,52,330,0,1516672482,"C:\\app\\vim80\\vimrc"
-'5  330  0  C:\app\vim80\vimrc
-|4,53,330,0,1516672451,"C:\\app\\vim80\\vimrc"
-'6  330  0  C:\app\vim80\vimrc
-|4,54,330,0,1516672451,"C:\\app\\vim80\\vimrc"
-'7  179  10  ~\_vimrc
-|4,55,179,10,1516672437,"~\\_vimrc"
-'8  1  0  D:\dev\nginx\html\index.html
-|4,56,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
-'9  25  7  C:\app\vim80\vim80\ftplugin\html.vim
-|4,57,25,7,1516672395,"C:\\app\\vim80\\vim80\\ftplugin\\html.vim"
+'0  110  0  ~\_vimrc
+|4,48,110,0,1516674517,"~\\_vimrc"
+'1  110  21  ~\_vimrc
+|4,49,110,21,1516674444,"~\\_vimrc"
+'2  7  0  ~\.tern-project
+|4,50,7,0,1516673587,"~\\.tern-project"
+'3  179  10  ~\_vimrc
+|4,51,179,10,1516673473,"~\\_vimrc"
+'4  178  10  ~\_vimrc
+|4,52,178,10,1516673473,"~\\_vimrc"
+'5  180  10  ~\_vimrc
+|4,53,180,10,1516673473,"~\\_vimrc"
+'6  179  10  ~\_vimrc
+|4,54,179,10,1516673473,"~\\_vimrc"
+'7  1  0  D:\dev\nginx\html\index.html
+|4,55,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
+'8  330  0  C:\app\vim80\vimrc
+|4,56,330,0,1516672482,"C:\\app\\vim80\\vimrc"
+'9  330  0  C:\app\vim80\vimrc
+|4,57,330,0,1516672482,"C:\\app\\vim80\\vimrc"
 
 # ジャンプリスト (新しいものが先):
+-'  110  0  ~\_vimrc
+|4,39,110,0,1516674517,"~\\_vimrc"
+-'  110  0  ~\_vimrc
+|4,39,110,0,1516674517,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516674458,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516674458,"~\\_vimrc"
+-'  110  21  ~\_vimrc
+|4,39,110,21,1516674444,"~\\_vimrc"
+-'  110  21  ~\_vimrc
+|4,39,110,21,1516674444,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516674387,"~\\_vimrc"
+-'  1  0  ~\_vimrc
+|4,39,1,0,1516674387,"~\\_vimrc"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
+-'  7  0  ~\.tern-project
+|4,39,7,0,1516673587,"~\\.tern-project"
 -'  7  0  ~\.tern-project
 |4,39,7,0,1516673587,"~\\.tern-project"
 -'  7  0  ~\.tern-project
@@ -244,6 +291,54 @@
 |4,39,1,0,1516673552,"~\\.tern-project"
 -'  1  0  ~\.tern-project
 |4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  1  0  ~\.tern-project
+|4,39,1,0,1516673552,"~\\.tern-project"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  178  10  ~\_vimrc
+|4,39,178,10,1516673473,"~\\_vimrc"
+-'  180  10  ~\_vimrc
+|4,39,180,10,1516673473,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  179  10  ~\_vimrc
+|4,39,179,10,1516673473,"~\\_vimrc"
+-'  178  10  ~\_vimrc
+|4,39,178,10,1516673473,"~\\_vimrc"
+-'  180  10  ~\_vimrc
+|4,39,180,10,1516673473,"~\\_vimrc"
 -'  179  10  ~\_vimrc
 |4,39,179,10,1516673473,"~\\_vimrc"
 -'  179  10  ~\_vimrc
@@ -260,6 +355,62 @@
 |4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
 -'  332  0  C:\app\vim80\vimrc
 |4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
+-'  332  0  C:\app\vim80\vimrc
+|4,39,332,0,1516673405,"C:\\app\\vim80\\vimrc"
 -'  1  0  C:\app\vim80\vimrc
 |4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
 -'  1  0  C:\app\vim80\vimrc
@@ -268,180 +419,32 @@
 |4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
 -'  1  0  C:\app\vim80\vimrc
 |4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672537,"D:\\dev\\nginx\\html\\index.html"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672482,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  330  0  C:\app\vim80\vimrc
-|4,39,330,0,1516672451,"C:\\app\\vim80\\vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  179  10  ~\_vimrc
-|4,39,179,10,1516672437,"~\\_vimrc"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
--'  1  0  D:\dev\nginx\html\index.html
-|4,39,1,0,1516672400,"D:\\dev\\nginx\\html\\index.html"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
+-'  1  0  C:\app\vim80\vimrc
+|4,39,1,0,1516673362,"C:\\app\\vim80\\vimrc"
 
 # ファイル内マークの履歴 (新しいものから古いもの):
 
 > ~\_vimrc
-	*	1516673469	0
-	"	179	10
-	^	179	11
-	.	180	0
+	*	1516674515	0
+	"	110	0
+	^	110	37
+	.	110	0
 	+	170	40
 	+	164	0
 	+	165	21
@@ -449,6 +452,7 @@
 	+	176	0
 	+	179	11
 	+	180	0
+	+	110	0
 
 > C:\app\vim80\vimrc
 	*	1516673403	0
