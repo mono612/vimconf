@@ -1,3 +1,5 @@
+au BufNewFile,BufRead .tern-project setf json
+au BufNewFile,BufRead .tern-config setf json
 " Detect vimshell rc file.
 autocmd BufNewFile,BufRead *.vimsh,.vimshrc,vimshrc set filetype=vimshrc
 " vint: -ProhibitAutocmdWithNoGroup
